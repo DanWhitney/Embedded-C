@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: 1 Mar 2022
+ *      Author: dwhitney
+ */
+
+
+#include<stdio.h>
+
+int main(void)
+{
+
+	float number = 45.78976834578;
+
+	printf("Number = %f\n", number);
+
+	printf("Press 'Enter' to exit this application\n");
+
+	getchar();
+
+	return 0;
+}

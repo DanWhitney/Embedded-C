@@ -1,0 +1,32 @@
+/*
+ * pointer.c
+ *
+ *  Created on: 3 Mar 2022
+ *      Author: dwhitney
+ */
+
+
+#include<stdio.h>
+
+
+long long int g_data = 0xFFFEABCD11112345;
+
+int main(void )
+{
+	char *pAddress1;
+
+	pAddress1 = (char*) &g_data;
+	printf("Value at Address %p\n", pAddress1);
+
+
+
+	while(getchar() != '\n')
+	{
+
+	}
+
+
+	getchar();
+
+	return 0;
+}

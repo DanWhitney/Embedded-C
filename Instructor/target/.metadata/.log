@@ -1,0 +1,63 @@
+!SESSION 2022-02-23 13:00:51.358 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\dwhitney\Documents\udemy\Embedded-C\Instructor\target
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-02-23 13:01:04.516
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-02-23 13:01:04.608
+!MESSAGE Log4j initialized with config file C:\Users\dwhitney\Documents\udemy\Embedded-C\Instructor\target\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-02-23 13:01:11.348
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:02:51.963
+!MESSAGE Indexed '001HelloWorld' (3 sources, 52 headers) in 1.39 sec: 2,084 declarations; 2,751 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:02:54.487
+!MESSAGE Indexed '010led_toggle_bitfields' (3 sources, 54 headers) in 0.971 sec: 2,033 declarations; 2,878 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:01.282
+!MESSAGE Indexed '005led_toggle' (3 sources, 53 headers) in 0.807 sec: 1,969 declarations; 2,816 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:07.886
+!MESSAGE Indexed '003Add' (3 sources, 51 headers) in 0.568 sec: 2,063 declarations; 2,737 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:08.420
+!MESSAGE Indexed '006pin_read' (3 sources, 53 headers) in 0.527 sec: 1,970 declarations; 2,819 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:08.901
+!MESSAGE Indexed '011keypad' (3 sources, 55 headers) in 0.478 sec: 2,122 declarations; 3,019 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:09.345
+!MESSAGE Indexed '009packed_Vsnonpacked' (3 sources, 52 headers) in 0.44 sec: 2,090 declarations; 2,771 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:09.752
+!MESSAGE Indexed '007volatile' (3 sources, 53 headers) in 0.403 sec: 1,966 declarations; 2,805 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:10.143
+!MESSAGE Indexed '002Sizeof' (3 sources, 52 headers) in 0.387 sec: 2,084 declarations; 2,755 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:10.550
+!MESSAGE Indexed '004led_on' (3 sources, 53 headers) in 0.402 sec: 1,967 declarations; 2,809 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-02-23 13:03:10.965
+!MESSAGE Indexed '008button_ISR' (3 sources, 55 headers) in 0.411 sec: 2,130 declarations; 2,977 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2022-02-28 13:24:09.778 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\dwhitney\Documents\udemy\Embedded-C\Instructor\target
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-02-28 13:24:17.585
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-02-28 13:24:17.699
+!MESSAGE Log4j initialized with config file C:\Users\dwhitney\Documents\udemy\Embedded-C\Instructor\target\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-02-28 13:24:30.559
+!MESSAGE Started RMI Server, listening on port 41337
