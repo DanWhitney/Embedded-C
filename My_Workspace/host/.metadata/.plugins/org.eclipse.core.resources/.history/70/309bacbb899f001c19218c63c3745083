@@ -1,0 +1,44 @@
+/*
+ * main.c
+ *
+ *  Created on: 9 Mar 2022
+ *      Author: dwhitney
+ */
+
+#include<stdio.h>
+#include<stdint.h>
+#include<inttypes.h>
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+	uint8_t startnum;
+	uint8_t endnumber;
+
+	printf("Even numbers between to numbers\n");
+	printf("Enter start and end number (give space between 2 nos):");
+	scanf("%" SCNdPTR ,&startnum, &endnumber);
+	flush(stdout);
+
+	printf("Even numbers between %d and %d", startnum, endnumber);
+
+	uint8_t num = 1;
+
+	while(num <= 10) {
+		printf("%d\n", num++);
+	}
+
+	wait_for_user_input();
+}
+
+void wait_for_user_input(void) {
+	printf("Press enter key to exit application \n");
+
+	while(getchar() != '\n')
+	{
+
+	}
+
+}
+
