@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: 9 Mar 2022
+ *      Author: dwhitney
+ */
+#include<stdint.h>
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+	uint8_t num;
+
+	wait_for_user_input();
+}
+
+void wait_for_user_input(void) {
+	printf("Press enter key to exit application \n");
+
+	while(getchar() != '\n')
+	{
+
+	}
+
+}

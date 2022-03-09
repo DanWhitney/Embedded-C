@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: 9 Mar 2022
+ *      Author: dwhitney
+ */
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+	wait_for_user_input();
+}
