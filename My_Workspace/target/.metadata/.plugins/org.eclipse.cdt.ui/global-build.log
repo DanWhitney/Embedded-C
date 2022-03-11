@@ -1,37 +1,70 @@
-09:14:08 **** Build of configuration Debug for project 004led_on ****
+12:59:45 **** Clean-only build of configuration Debug for project 006pin_read ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/syscalls.d ./Src/syscalls.o ./Src/sysmem.d ./Src/sysmem.o
+rm -rf 006pin_read.bin 006pin_read.elf 006pin_read.list default.size.stdout
+rm: can't remove '006pin_read.elf': Permission denied
+make: [makefile:84: clean] Error 1 (ignored)
+ 
+12:59:48 **** Incremental Build of configuration Debug for project 006pin_read ****
 make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
 ../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
    22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
       |    ^~~~~~~
-arm-none-eabi-gcc -o "004led_on.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\004led_on\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004led_on.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 004led_on.elf
+../Src/main.c: In function 'main':
+../Src/main.c:31:11: warning: unused variable 'delayAmount' [-Wunused-variable]
+   31 |  uint64_t delayAmount = 100000;
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 006pin_read.elf
  
-arm-none-eabi-size   004led_on.elf 
-arm-none-eabi-objdump -h -S  004led_on.elf  > "004led_on.list"
+arm-none-eabi-size   006pin_read.elf 
+arm-none-eabi-objdump -h -S  006pin_read.elf  > "006pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    748	      8	   1568	   2324	    914	004led_on.elf
-arm-none-eabi-objcopy  -O binary  004led_on.elf  "004led_on.bin"
+    744	      8	   1568	   2320	    910	006pin_read.elf
+arm-none-eabi-objcopy  -O binary  006pin_read.elf  "006pin_read.bin"
 Finished building: default.size.stdout
  
-Finished building: 004led_on.list
+Finished building: 006pin_read.list
  
-Finished building: 004led_on.bin
+Finished building: 006pin_read.bin
  
-09:19:17 **** Incremental Build of configuration Debug for project 004led_on ****
+13:04:36 **** Clean-only build of configuration Debug for project 006pin_read ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/syscalls.d ./Src/syscalls.o ./Src/sysmem.d ./Src/sysmem.o
+rm -rf 006pin_read.bin 006pin_read.elf 006pin_read.list default.size.stdout
+rm: can't remove '006pin_read.elf': Permission denied
+make: [makefile:84: clean] Error 1 (ignored)
+ 
+13:04:38 **** Incremental Build of configuration Debug for project 006pin_read ****
 make -j8 all 
-arm-none-eabi-size   004led_on.elf 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:31:11: warning: unused variable 'delayAmount' [-Wunused-variable]
+   31 |  uint64_t delayAmount = 100000;
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 006pin_read.elf
+ 
+arm-none-eabi-size   006pin_read.elf 
+arm-none-eabi-objdump -h -S  006pin_read.elf  > "006pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    748	      8	   1568	   2324	    914	004led_on.elf
+    720	      8	   1568	   2296	    8f8	006pin_read.elf
+arm-none-eabi-objcopy  -O binary  006pin_read.elf  "006pin_read.bin"
 Finished building: default.size.stdout
  
-09:50:48 **** Incremental Build of configuration Debug for project 004led_on ****
-make -j8 all 
-arm-none-eabi-size   004led_on.elf 
-   text	   data	    bss	    dec	    hex	filename
-    748	      8	   1568	   2324	    914	004led_on.elf
-Finished building: default.size.stdout
+Finished building: 006pin_read.list
+Finished building: 006pin_read.bin
+ 
  

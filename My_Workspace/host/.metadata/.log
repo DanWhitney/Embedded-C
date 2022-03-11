@@ -196,3 +196,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\dwhitne
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-03-09 08:45:58.756
 !MESSAGE Indexed 'whileLoopEvenNum' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2022-03-10 08:31:19.032 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-03-10 08:31:30.174
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-03-10 08:31:30.268
+!MESSAGE Log4j initialized with config file C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\host\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-03-10 08:31:42.665
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-10 13:13:56.869
+!MESSAGE Indexed 'constdata' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: 10 Mar 2022
+ *      Author: dwhitney
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+
+int main(void)
+{
+	uint8_t data = 10;
+
+	data = 50;
+
+	printf("Value = %"PRId8, data);
+
+	getchar();
+
+
+}
+
