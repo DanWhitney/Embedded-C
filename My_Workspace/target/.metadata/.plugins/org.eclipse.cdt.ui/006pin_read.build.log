@@ -1,30 +1,10 @@
-13:04:38 **** Incremental Build of configuration Debug for project 006pin_read ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-      |    ^~~~~~~
-../Src/main.c: In function 'main':
-../Src/main.c:31:11: warning: unused variable 'delayAmount' [-Wunused-variable]
-   31 |  uint64_t delayAmount = 100000;
-      |           ^~~~~~~~~~~
-arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006pin_read.elf
- 
+09:44:20 **** Incremental Build of configuration Debug for project 006pin_read ****
+make -j12 all 
 arm-none-eabi-size   006pin_read.elf 
-arm-none-eabi-objdump -h -S  006pin_read.elf  > "006pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    720	      8	   1568	   2296	    8f8	006pin_read.elf
-arm-none-eabi-objcopy  -O binary  006pin_read.elf  "006pin_read.bin"
+    764	      8	   1568	   2340	    924	006pin_read.elf
 Finished building: default.size.stdout
  
-Finished building: 006pin_read.list
-Finished building: 006pin_read.bin
- 
- 
 
-13:04:44 Build Finished. 0 errors, 2 warnings. (took 6s.346ms)
+09:44:22 Build Finished. 0 errors, 0 warnings. (took 1s.810ms)
 

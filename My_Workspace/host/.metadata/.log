@@ -214,3 +214,78 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\dwhitne
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-03-10 13:13:56.869
 !MESSAGE Indexed 'constdata' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2022-03-11 18:32:53.875 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Users\Daniel\Documents\git working area\Embedded-C\My_Workspace\host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-03-11 18:33:03.846
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-03-11 18:33:03.984
+!MESSAGE Log4j initialized with config file E:\Users\Daniel\Documents\git working area\Embedded-C\My_Workspace\host\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-03-11 18:33:20.897
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-03-13 15:30:25.832 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Users\Daniel\Documents\git working area\Embedded-C\My_Workspace\host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-03-13 15:31:37.813
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-03-13 15:31:38.017
+!MESSAGE Log4j initialized with config file E:\Users\Daniel\Documents\git working area\Embedded-C\My_Workspace\host\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2022-03-13 15:31:44.885
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.search.SearchResultView" id and the "Classic Search" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-03-13 15:31:58.770
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:39.437
+!MESSAGE Indexed 'structInit' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:39.919
+!MESSAGE Indexed 'ASCII' (2 sources, 9 headers) in 0.445 sec: 522 declarations; 1,222 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.133
+!MESSAGE Indexed 'pointer_1' (1 sources, 9 headers) in 0.163 sec: 513 declarations; 1,200 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.394
+!MESSAGE Indexed 'whileLoopEvenNum' (2 sources, 15 headers) in 0.229 sec: 588 declarations; 1,412 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.516
+!MESSAGE Indexed 'pointer' (1 sources, 9 headers) in 0.108 sec: 511 declarations; 1,192 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.643
+!MESSAGE Indexed 'Average' (2 sources, 9 headers) in 0.115 sec: 518 declarations; 1,214 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.811
+!MESSAGE Indexed 'ifElseBiggestOfTwo' (1 sources, 15 headers) in 0.156 sec: 572 declarations; 1,371 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:40.930
+!MESSAGE Indexed '000TestProject' (2 sources, 9 headers) in 0.105 sec: 510 declarations; 1,184 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.036
+!MESSAGE Indexed 'floatPrice' (1 sources, 9 headers) in 0.096 sec: 509 declarations; 1,184 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.170
+!MESSAGE Indexed 'pointer_2' (2 sources, 9 headers) in 0.122 sec: 514 declarations; 1,210 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.340
+!MESSAGE Indexed 'ifStatementCastVote' (1 sources, 15 headers) in 0.159 sec: 571 declarations; 1,356 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.485
+!MESSAGE Indexed 'WhileLoop1to10' (2 sources, 12 headers) in 0.133 sec: 555 declarations; 1,267 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.650
+!MESSAGE Indexed 'constdata' (1 sources, 15 headers) in 0.14 sec: 574 declarations; 1,354 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-13 15:55:41.756
+!MESSAGE Indexed 'floatCharge' (1 sources, 9 headers) in 0.095 sec: 511 declarations; 1,194 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

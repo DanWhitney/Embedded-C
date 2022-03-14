@@ -25,13 +25,17 @@
 int main(void)
 {
 
-	uint32_t *pClkCtrlreg = (uint32_t*) 0x40023830;
-	uint32_t *pPortDModeReg = (uint32_t*) 0x40020C00;
-	uint32_t *pPortDOutReg = (uint32_t*) 0x40020C14;
-	uint64_t delayAmount = 100000;
+	uint32_t volatile *const pClkCtrlreg = (uint32_t*) 0x40023830;
+	uint32_t volatile *const pPortDModeReg = (uint32_t*) 0x40020C00;
+	uint32_t volatile *const pPortDOutReg = (uint32_t*) 0x40020C14;
 
-	uint32_t *pPortAModeReg = (uint32_t*) 0x40020000;
-	uint32_t *pPortAInReg = (uint32_t*) 0x40020010;
+
+	uint32_t volatile *const pPortAModeReg = (uint32_t*) 0x40020000;
+	uint32_t const volatile *const pPortAInReg = (uint32_t*) 0x40020010;
+	/*
+	 * pPortAInReg is const pointer pointing to volatile const of type uint32_t
+	 * the const is used to stop the programmer changing the data, because pPortAInReg is read only.
+	 */
 
 	// Enable the clock for GPIOD, GPIOA peripheral in the AHB1ENR
 	*pClkCtrlreg |= ( 1 << 3);
@@ -47,7 +51,7 @@ int main(void)
 
 	while(1)
 	{
-		//read the pin status of the pin PA0 (GPIOA Input Data registor)
+		//read the pin status of the pin PA0 (GPIOA Input Data register)
 		uint8_t pinStatus = (uint8_t)(*pPortAInReg & 0x1);
 
 		if (pinStatus) {

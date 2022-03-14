@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
 ################################################################################
 
 -include ../makefile.init
@@ -42,14 +42,14 @@ BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ART
 EXECUTABLES += \
 006pin_read.elf \
 
+MAP_FILES += \
+006pin_read.map \
+
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
 006pin_read.list \
-
-OBJCOPY_BIN += \
-006pin_read.bin \
 
 
 # All Target
@@ -59,8 +59,8 @@ all: main-build
 main-build: 006pin_read.elf secondary-outputs
 
 # Tool invocations
-006pin_read.elf: $(OBJS) $(USER_OBJS) C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dwhitney\Documents\git\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+006pin_read.elf 006pin_read.map: $(OBJS) $(USER_OBJS) E:\Users\Daniel\Documents\git\ working\ area\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Users\Daniel\Documents\git working area\Embedded-C\My_Workspace\target\006pin_read\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -74,17 +74,12 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-006pin_read.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "006pin_read.bin"
-	@echo 'Finished building: $@'
-	@echo ' '
-
 # Other Targets
 clean:
-	-$(RM) 006pin_read.bin 006pin_read.elf 006pin_read.list default.size.stdout
+	-$(RM) 006pin_read.elf 006pin_read.list 006pin_read.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

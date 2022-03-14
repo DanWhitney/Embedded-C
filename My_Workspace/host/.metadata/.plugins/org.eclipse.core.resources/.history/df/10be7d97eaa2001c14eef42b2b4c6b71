@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: 13 Mar 2022
+ *      Author: Daniel
+ */
+
+
+#include<stdint.h>
+#include<stdio.h>
+
+struct carModel
+{
+	uint32_t carNumber;
+	uint32_t carPrice;
+
+};
+
+int main(void) {
+
+
+	return 0;
+}
